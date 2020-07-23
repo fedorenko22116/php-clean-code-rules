@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04ec6e8ad4807d5f2d8571217e4c320a",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "c0e87721a8d5b58cb8a3cfdda23d7926",
+    "packages": [
         {
             "name": "escapestudios/symfony2-coding-standard",
             "version": "3.11.0",
@@ -274,10 +273,11 @@
             "time": "2020-04-17T01:09:41+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4"
