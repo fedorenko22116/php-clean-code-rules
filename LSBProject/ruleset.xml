@@ -189,6 +189,15 @@
         <properties>
             <property name="linesCountBeforeControlStructure" value="1" />
             <property name="linesCountAfterControlStructure" value="1" />
+            <property name="tokensToCheck" type="array">
+                <element value="T_IF"/>
+                <element value="T_SWITCH"/>
+                <element value="T_TRY"/>
+                <element value="T_FOR"/>
+                <element value="T_FOREACH"/>
+                <element value="T_DO"/>
+                <element value="T_WHILE"/>
+            </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
