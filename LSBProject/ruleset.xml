@@ -54,7 +54,46 @@
 
     <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
         <properties>
-            <property name="linesCountBetweenDifferentAnnotationsTypes" type="int" value="1" />
+            <property name="linesCountBetweenDescriptionAndAnnotations" type="int" value="1" />
+            <property name="linesCountBetweenAnnotationsGroups" type="int" value="1" />
+            <property name="annotationsGroups" type="array">
+                <element value="
+                    @template,
+                    @implements,
+                    @extends,
+                    @testCase,
+                    @dataProvider,
+                    @deprecated,
+                    @private,
+                    @public,
+                " />
+                <element value="
+                    @Route\,
+                    @Rest\,
+                " />
+                <element value="
+                    @ORM\,
+                    @Entity\,
+                    @Assert\,
+                " />
+                <element value="
+                    @OA\,
+                    @SWG\,
+                " />
+                <element value="
+                    @var,
+                    @param,
+                " />
+                <element value="
+                    @see,
+                    @covers,
+                    @throws,
+                    @uses,
+                " />
+                <element value="
+                    @return,
+                " />
+            </property>
         </properties>
     </rule>
 
@@ -156,7 +195,7 @@
     <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition" />
     <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
         <properties>
-            <property name="minLinesCount" value="1" />
+            <property name="minLinesCount" value="0" />
             <property name="maxLinesCount" value="1" />
         </properties>
     </rule>
