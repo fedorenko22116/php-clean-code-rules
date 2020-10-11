@@ -5,7 +5,9 @@
     <config name="installed_paths" value="vendor/escapestudios/symfony2-coding-standard,vendor/slevomat/coding-standard" />
 
     <rule ref="PSR1"/>
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing" />
+    </rule>
     <rule ref="PSR12"/>
     <rule ref="Symfony">
         <exclude name="Symfony.Functions.Arguments" />
@@ -15,6 +17,7 @@
         <exclude name="Generic.Commenting.DocComment.MissingShort" />
         <exclude name="Squiz.Commenting.FileComment.Missing" />
         <exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound" />
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing" />
     </rule>
 
     <rule ref="Symfony.Commenting.FunctionComment.MissingReturn">
@@ -141,13 +144,6 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch" />
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator" />
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator" />
-    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
-        <properties>
-            <property name="ignoreStandaloneIfInScope" value="true" />
-            <property name="ignoreOneLineTrailingIf" value="true" />
-            <property name="ignoreTrailingIfWithOneInstruction" value="true" />
-        </properties>
-    </rule>
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators" />
     <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators">
         <properties>
