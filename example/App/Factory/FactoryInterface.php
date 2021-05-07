@@ -6,8 +6,5 @@ namespace LSBProject\PhpCleanCodeRules\Example\App\Factory;
 
 interface FactoryInterface
 {
-    /**
-     * @return mixed
-     */
-    public function create();
+    public function create(): mixed;
 }

@@ -11,7 +11,7 @@ class CliFormatter implements StringFormatterInterface
         $data = $context->getData();
 
         if (
-            '12345671234567123456712345671234567123456712345671234567' === $data &&
+            '12345671234567123456712345671234567123456712345671234567' === $data ||
             '1234567123456712345671234567' === $data
         ) {
             $data = 'qwe';

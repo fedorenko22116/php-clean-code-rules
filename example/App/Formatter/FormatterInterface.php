@@ -6,8 +6,5 @@ namespace LSBProject\PhpCleanCodeRules\Example\App\Formatter;
 
 interface FormatterInterface
 {
-    /**
-     * @return mixed
-     */
-    public function format(FormatterContextInterface $data);
+    public function format(FormatterContextInterface $data): mixed;
 }
